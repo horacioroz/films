@@ -1,0 +1,99 @@
+body{
+	width:100%;
+	text-align:center;
+	/*border: 2px solid #000;*/
+	height:auto;
+}
+a:hover{
+	text-decoration: none;
+}
+header{
+	width: 100%;
+	display: inline-block;
+}
+.clear{
+	clear:both;
+}
+.my_headline_font_size{
+	 font-size:24px;
+}
+.circle{
+	font-weight: bold;
+	font-style: italic;
+	border-radius: 100%;
+	background: #f84342;
+	border: 2px solid #000;
+	width: 80px;
+	height: 80px;
+	margin: 10px 10px;
+	text-align: center;
+	color: #fff;
+	font-size: 10px;
+	line-height: 16px;
+	cursor: pointer;
+	/*transform: rotate(11deg);*/
+	/*-ms-transform: rotate(11deg);/* IE 9 */
+	/*-webkit-transform: rotate(11deg);/* OPERA, CHROME, SAFARI */
+}
+.logo:hover{
+	text-decoration: none;
+}
+.slogan{
+	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+	font-style: italic;
+	padding-top: 26px;
+}
+.links{
+	padding-top: 26px;
+}
+.links a{
+	border-bottom: 1px solid #dfdfdf;
+	color: black;
+	font-family: "nobileregular", sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding-right: 10px;
+}
+header{
+	border-top: 9px solid #222222;
+}
+hr{
+	clear: both;
+	height:4px;
+	background-color:#84847f;
+}
+h1{
+	font-family: "script", sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	letter-spacing: -1.5px;
+}
+h2{
+	font-family: "nobilemedium_italic", sans-serif;
+	font-weight: 600;
+	letter-spacing: -1.5px;
+	font-style:italic;
+}
+.next-quote{
+	color: #f84342;
+	font-family: 'nobilemedium_italic', sans-serif;
+	font-size: 20px;
+}
+.footer-blurb{
+	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+	font-style: italic;
+	text-align: rigth;
+	font-size: 10px;
+}
+p{
+	text-align: left;
+	font-family: 'nobileregular', sans-serif;
+	font-size: 12px;
+}
+p a{
+	color: black;
+}
+.img-responsive{
+	margin-left:-16px;
+	margin-top: 15px;
+}

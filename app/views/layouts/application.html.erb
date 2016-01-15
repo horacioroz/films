@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Films</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+		<div class="col-xs-4">
+			<%= link_to root_path, class: 'logo' do %>
+			<div class="circle">
+			  <br />
+			  You know
+			  <br />
+			  you need
+			  <br />
+			  to code
+			</div>
+			<% end %>
+		</div>
+
+		<div class="col-xs-4 slogan">
+			Splurting out unsolicited advice about entreprenourship since 2014
+		</div>
+		<div class="col-xs-4 links">
+			<%= link_to 'Contribute', new_quote_path %>
+			<%= link_to 'About',about_path %>
+		</div>
+	</header>
+
+	<hr />
+	<br class="clear" />
+
+	<div class="container">
+		<% if flash[:error].present? %>
+			<div class="col-xs-10 col-xs-offset-1 alert alert-danger">
+				<%= flash[:error].html_safe %>
+			</div>
+		<% end %>
+		<%= yield %>
+	</div>
+	
+	<div class="footer">
+		<div class="container">
+			<div class="col-xs-6">
+				<%= link_to 'This isn\'t enaugh, I need more', root_path, class: 'next-quote' %>
+			</div>
+			<div class="col-xs-6 footer-blurb">
+				Proudly hacked in Boston, MA by <a href="http://The Firehoseproject.com">Marco &amp; Ken</a><br />
+				Want to bild your oun Splurty Web App <a href="http://The Firehoseproject.com">Learn how to code here</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

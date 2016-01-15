@@ -1,0 +1,3 @@
+01.- Cuando hablamos de Bootstrap i bien divide en 12 cols traata a las pantallas por cantidad de px de cada una, es decir, xs, sm(750px), md(970px), lg(1170px). Asumiendo eso hoy hay celulares que tienen más de 1200px de definición en pantalla cual sería el motivo por el que un diseño para pantalla dsktop no se pudiera ver en un cel si se trata de densidad.
+02.- No está tampoco muy claro el tema de las 12 columnas. Por ejemplo. Cuando en "Example: Mobile & Desktop" hace '.col-xs-6.col-md4 | .col-xs-6.col-md4 | .col-xs-6.col-md4 |' en xs suma 18 y no 12, no se comprende bien.
+03.- Por algún motivo que desconozco la fuente nobilemedium_italic está mal instalada o no la reconoce.
