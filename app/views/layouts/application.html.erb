@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<div class="col-xs-4">
+		<div class="col-xs-4 col-sm-4">
 			<%= link_to root_path, class: 'logo' do %>
 			<div class="circle">
 			  <br />
@@ -21,14 +21,43 @@
 			<% end %>
 		</div>
 
-		<div class="col-xs-4 slogan">
+		<div class="col-sm-4 hidden-xs slogan">
 			Splurting out unsolicited advice about entreprenourship since 2014
 		</div>
-		<div class="col-xs-4 links">
-			<%= link_to 'Contribute', new_quote_path %>
+		<div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-1 links">
+	<!-- Button trigger modal -->
+			<%= link_to 'Contribute', '#', data:{toggle: 'modal', target: '#myModal'}%>
+			&nbsp;&nbsp;
 			<%= link_to 'About',about_path %>
 		</div>
 	</header>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="button" class="close" data-dismiss="modal" aria-hidden="true">&times</button>
+					<h4 class="modal-title" id="myModalLabel">Contribute your quote</h4>
+				</div>
+				<div class="modal-body">
+					<%=simple_form_for Quote.new do |f| %>
+						<%= f.input :saying, label:"What is the saying you want to add?", placeholder: "Fear is the disease, Hustle is the antidote" %>
+						<br />
+						<%= f.input  :author, label:"Who is the author of the quote ?", placeholder: "Travis Kalanick" %>
+						<br />
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dafault" data-dismiss="modal">Close</button>
+					<%= f.submit 'Add Quote', class: 'btn btn-danger' %>
+					<!-- <button type="button" class="btn btn-primary">Save Changes</button> -->
+				</div>
+					<% end %>
+			</div>
+			
+		</div>
+		
+	</div>
 
 	<hr />
 	<br class="clear" />
@@ -44,10 +73,10 @@
 	
 	<div class="footer">
 		<div class="container">
-			<div class="col-xs-6">
+			<div class="col-xs-12 col-sm-6">
 				<%= link_to 'This isn\'t enaugh, I need more', root_path, class: 'next-quote' %>
 			</div>
-			<div class="col-xs-6 footer-blurb">
+			<div class="col-xs-12 col-sm-6 footer-blurb">
 				Proudly hacked in Boston, MA by <a href="http://The Firehoseproject.com">Marco &amp; Ken</a><br />
 				Want to bild your oun Splurty Web App <a href="http://The Firehoseproject.com">Learn how to code here</a>
 			</div>
