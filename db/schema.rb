@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160104162234) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "quotes", force: true do |t|
     t.string   "saying"
     t.string   "author"

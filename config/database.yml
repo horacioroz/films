@@ -1,8 +1,10 @@
 default: &default
   adapter: postgresql
+  username: postgres
+  password: root
+  host: 127.0.0.1
+  encoding: unicode
   pool: 5
-  timeout: 5000
-  password: tro1234nks
 
 development:
   <<: *default
